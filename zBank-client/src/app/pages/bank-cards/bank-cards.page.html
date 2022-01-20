@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-button>
+  <ion-button (click)="goHome()">
     <ion-icon name="chevron-back-outline"></ion-icon>
   </ion-button>
 
@@ -8,20 +8,7 @@
 </ion-header>
 
 <ion-content >
-  <ion-card>
-    <ion-card-header>
-      <ion-icon name="radio-outline"></ion-icon>
-      <ion-text>****7645</ion-text>
-    </ion-card-header>
-
-    <ion-card-content>
-      <ion-item-group>
-        <ion-text>Balance</ion-text>
-        <ion-text>$3,650</ion-text>
-      </ion-item-group>
-      <ion-text class="text-label">VISA</ion-text>
-    </ion-card-content>
-  </ion-card>
+  <app-bank-card></app-bank-card>
 
   <ion-content scrollY="false" class="content-list-container">
     <ion-item-group class="list-header">

@@ -1,0 +1,35 @@
+<ion-content class="main-container">
+  <ion-item-group class="header-content-container">
+    <ion-card>
+      <ion-card-header>Monthly Budget</ion-card-header>
+      <ion-card-content>+$1200</ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>Your Saving</ion-card-header>
+      <ion-card-content>$1200</ion-card-content>
+    </ion-card>
+  </ion-item-group>
+
+  <ion-content scrollY="false">
+    <ion-item-group class="card-content-container">
+      <swiper
+        [pagination]="{
+          dynamicBullets: true
+        }"
+        class="mySwiper"
+      >
+        <ng-template swiperSlide>
+          <app-bank-card (click)="openTransactions()"></app-bank-card>
+        </ng-template>
+        <ng-template swiperSlide>
+          <app-bank-card (click)="openTransactions()"></app-bank-card>
+        </ng-template>
+        <ng-template swiperSlide>
+          <app-bank-card (click)="openTransactions()"></app-bank-card>
+        </ng-template>
+      </swiper>
+    </ion-item-group>
+
+
+  </ion-content>
+</ion-content>
