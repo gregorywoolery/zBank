@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "zBank-client",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

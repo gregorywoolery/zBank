@@ -1,0 +1,7 @@
+{
+  "name": "zBank-client",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
