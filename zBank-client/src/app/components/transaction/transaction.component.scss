@@ -12,7 +12,7 @@
   width: 2.6rem;
   height: 2.6rem;
   border-radius: 50%;
-  background-color: darkblue;
+  background-color: rgb(86, 255, 122);
   margin-right: 1rem;
 }
 
@@ -36,7 +36,12 @@
   display: flex;
   justify-content: space-between;
   height: 2rem;
+}
 
+.content-container:first-child{
+  ion-text{
+    color: #292929
+  }
 }
 
 ion-text{

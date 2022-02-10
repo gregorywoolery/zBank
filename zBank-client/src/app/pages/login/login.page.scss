@@ -1,0 +1,137 @@
+ion-content{
+  --background: var(--main-purple);
+}
+
+.overview-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  a{
+    text-decoration: underline;
+  }
+}
+
+.main-container{
+  padding: 2rem;
+  padding-top: 4rem !important;
+
+  >div:first-child{
+    font-size: 2rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+  }
+}
+
+.content-container > div > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-input, ion-item{
+  --background: none !important;
+}
+
+ion-item{
+  width: 100%;
+  --padding-start: 0 !important;
+}
+
+ion-input, ion-label{
+  font-size: 13px !important;
+}
+
+.checkbox-container{
+  margin-top: .4rem;
+  display: flex;
+  align-items: flex-start !important;
+
+  ion-checkbox{
+    --size: 1rem;
+  }
+
+  ion-item{
+    width: min-content;
+  }
+}
+
+ion-button{
+  width: 100%;
+  height: 2.3rem;
+  --border-radius: 1.2rem;
+  --background: #D9B2E1;
+  color: #301145;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.login-button{
+  --background: #9C488D;
+  margin-top: 1rem !important;
+  color: #fff;
+}
+
+ion-footer {
+  background-color: none;
+}
+
+
+ion-item-divider{
+  --background: none;
+}
+
+.signin-with-container{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  >div:first-child{
+    margin-bottom: .5rem;
+  }
+  >ion-button{
+    margin-top: .6rem;
+  }
+}
+
+a{
+  font-weight: 100 !important;
+  letter-spacing: .1px;
+}
+
+
+.divider {
+  margin-bottom: 1.5rem !important;
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+  // align-items: center;
+  // text-align: center;
+}
+
+/* To show the lines on right
+and left sides of the text */
+.divider::after,
+.divider::before {
+  content: "";
+  border: 1px solid #cecece;
+  flex: 1;
+}
+
+/* Space on left and right sides of text */
+.divider:not(:empty)::before {
+  margin-right: 0.50em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.50em;
+}

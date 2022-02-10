@@ -1,0 +1,18 @@
+ion-content{
+  --background: var(--main-purple);
+
+}
+
+.content-container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+ion-button{
+  width: 16rem;
+  height: 3rem;
+  font-weight: lighter;
+}

@@ -1,16 +1,16 @@
-<ion-content class="main-container">
-  <ion-item-group class="header-content-container">
-    <ion-card>
-      <ion-card-header>Monthly Budget</ion-card-header>
-      <ion-card-content>+$1200</ion-card-content>
-    </ion-card>
-    <ion-card>
-      <ion-card-header>Your Saving</ion-card-header>
-      <ion-card-content>$1200</ion-card-content>
-    </ion-card>
-  </ion-item-group>
+<ion-content class="main-container" scrollY="false">
+  <ion-header>
+    <div class="header-bar">
+      <div class="screen-title">My Cards</div>
+      <div class="header-actions">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-icon name="log-out-outline"></ion-icon>
+      </div>
+    </div>
+  </ion-header>
+  <ion-content scrollY="false" class="internal-container">
 
-  <ion-content scrollY="false">
+
     <ion-item-group class="card-content-container">
       <swiper
         [pagination]="{
@@ -18,7 +18,7 @@
         }"
         class="mySwiper"
       >
-        <ng-template swiperSlide>
+        <ng-template swiperSlide >
           <app-bank-card (click)="openTransactions()"></app-bank-card>
         </ng-template>
         <ng-template swiperSlide>
@@ -29,6 +29,42 @@
         </ng-template>
       </swiper>
     </ion-item-group>
+
+    <div class="action-container">
+      <ion-button>
+        <div>
+          <div class="icon-container">
+            <ion-icon name="arrow-down-outline"></ion-icon>
+          </div>
+          <div>
+            Top up
+          </div>
+        </div>
+      </ion-button>
+
+      <ion-button>
+        <div>
+          <div class="icon-container">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </div>
+          <div>
+            Send
+          </div>
+        </div>
+
+      </ion-button>
+
+      <ion-button>
+        <div>
+          <div class="icon-container">
+            <ion-icon name="add-outline"></ion-icon>
+          </div>
+          <div>
+            Pay
+          </div>
+        </div>
+      </ion-button>
+    </div>
 
 
   </ion-content>

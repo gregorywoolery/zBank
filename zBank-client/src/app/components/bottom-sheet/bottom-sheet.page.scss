@@ -1,0 +1,34 @@
+.sheet-container{
+  height: 100%;
+
+  .sheet-header{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    >div:first-child{
+      font-weight: bold;
+      font-size: 30px;
+      padding-top: .8rem;
+      padding-left: 1rem;
+      width: 20%;
+      color: #292929;
+    }
+    >div:last-child{
+      width: 70%;
+    }
+  }
+}
+
+
+ion-searchbar{
+  --color: #292929;
+  *{
+    color: #292929;
+  }
+
+}
+
+.sheet-content{
+  color: #292929 !important;
+  padding: .3rem 1rem;
+}

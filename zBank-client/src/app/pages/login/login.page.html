@@ -1,0 +1,53 @@
+<ion-content scrollY="false">
+  <div class="overview-container">
+    <div class="main-container">
+      <div>
+      Log in
+      </div>
+
+      <div class="content-container">
+        <div>
+          <div>
+            <ion-item>
+              <ion-label position="floating">Username or email</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+          </div>
+
+          <div>
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+          </div>
+
+          <div class="checkbox-container">
+            <ion-item lines="none">
+              <ion-label>Remember me</ion-label>
+              <ion-checkbox slot="start"></ion-checkbox>
+            </ion-item>
+          </div>
+
+          <div>
+            <ion-button (click)="login()" class="login-button">Log in</ion-button>
+            <div class="forgot-link-container"><a routerLink="#">Forgot Password?</a></div>
+          </div>
+
+
+        </div>
+
+        <div class="signin-with-container">
+          <div class="divider">Or</div>
+
+          <ion-button>Continue with Google</ion-button>
+          <ion-button>Continue with Twitter</ion-button>
+          <ion-button>Continue with Facebook</ion-button>
+        </div>
+      </div>
+
+    </div>
+    <div id="footer">
+      <a routerLink="/signup">Don't have an account? Sign Up</a>
+    </div>
+  </div>
+</ion-content>
