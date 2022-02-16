@@ -23,10 +23,29 @@ ion-content{
   padding: 2rem;
   padding-top: 4rem !important;
 
+  //Title
   >div:first-child{
-    font-size: 2rem;
-    font-family: 'Fira Sans Condensed', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >div:first-child{
+      font-size: 2rem;
+      font-family: 'Fira Sans Condensed', sans-serif;
+    }
+    >.social-signup-button{
+      width: 3rem !important;
+      // width: 100%;
+      // height: 2.3rem;
+      --border-radius: 1.4rem !important;
+      // --background: #D9B2E1;
+      // color: #301145;
+      // font-weight: bold;
+      // font-size: 1.2rem;
 
+      ion-icon{
+        font-size: 30px !important;
+      }
+    }
   }
 }
 
@@ -75,20 +94,6 @@ ion-item-divider{
   --background: none;
 }
 
-.signin-with-container{
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
-  >div:first-child{
-    margin-bottom: .5rem;
-  }
-  >ion-button{
-    margin-top: .6rem;
-  }
-}
-
 a{
   font-weight: 100 !important;
   letter-spacing: .1px;
@@ -101,4 +106,20 @@ a{
   font-size: 1.2rem;
   // justify-content: center;
   // align-items: center;
+}
+
+
+.signup-photo-1{
+  background-image: url("../../../assets/images/handshake-signup.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: contain;
+
+  height: 12rem;
+  width: 100%;
+}
+
+.back-home-button{
+  width: 3rem;
 }

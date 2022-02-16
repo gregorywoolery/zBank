@@ -29,16 +29,16 @@ const routes: Routes = [
   },
   {
     path: 'verifyotp',
-    loadChildren: () => import('./pages/verifyotp/verifyotp.module').then( m => m.VerifyotpPageModule)
+    loadChildren: () => import('./pages/verifyotp/verifyotp.module').then(m => m.VerifyotpPageModule)
   },
   {
     path: 'intro-pages',
-    loadChildren: () => import('./pages/intro-pages/intro-pages.module').then( m => m.IntroPagesPageModule)
+    loadChildren: () => import('./pages/intro-pages/intro-pages.module').then(m => m.IntroPagesPageModule)
   },
   {
     path: 'bottom-sheet',
-    loadChildren: () => import('./components/bottom-sheet/bottom-sheet.module').then( m => m.BottomSheetPageModule)
-  },
+    loadChildren: () => import('./components/bottom-sheet/bottom-sheet.module').then(m => m.BottomSheetPageModule)
+  }
 ];
 
 @NgModule({

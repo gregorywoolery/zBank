@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupPage implements OnInit {
 
-  constructor() { }
+  showRegSignUp: boolean = false;
+
+  constructor(private router: Router) { }
+
 
   ngOnInit() {
   }
 
+  showFormRegSignup() {
+    this.showRegSignUp = !this.showRegSignUp;
+  }
+
+  submitForm() {
+    this.router.navigateByUrl('/cards-home')
+  }
 }

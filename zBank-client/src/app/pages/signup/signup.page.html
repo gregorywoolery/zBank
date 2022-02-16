@@ -2,49 +2,122 @@
   <div class="overview-container">
     <div class="main-container">
       <div>
-      Sign up
+        <div>Sign up</div>
+        <ion-button class="social-signup-button">
+          <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+        </ion-button>
+      </div>
+      <div>
+        <div class="signup-photo-1"></div>
       </div>
 
       <div class="content-container">
         <div>
-          <div>
-            <ion-item>
-              <ion-label position="floating">Username or email</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-          </div>
 
-          <div>
-            <ion-item>
-              <ion-label position="floating">Password</ion-label>
-              <ion-input type="password"></ion-input>
-            </ion-item>
-          </div>
+          <form >
+            <div *ngIf="!showRegSignUp">
+              <div>
+                <ion-item>
+                  <ion-label position="floating">Fistname</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+                <div>
+                  <ng-container ></ng-container>
+                </div>
+              </div>
 
-          <div>
-            <ion-item>
-              <ion-label position="floating">Re-enter Password</ion-label>
-              <ion-input type="password"></ion-input>
-            </ion-item>
-          </div>
-
-          <div>
-            <div class="forgot-link-container">
-              By continuing your agree to our
-              <a routerLink="#">Terms of Service</a>
-              and <a routerLink="#">Privacy Policy</a>
+              <div>
+                <ion-item>
+                  <ion-label position="floating">Lastname</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+                <div>
+                  <ng-container ></ng-container>
+                </div>
+              </div>
             </div>
 
-            <ion-button class="login-button">Sign up</ion-button>
-          </div>
 
+            <div *ngIf="showRegSignUp">
+              <div>
+                <ion-item>
+                  <ion-label position="floating">Email</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+                <div>
+                  <ng-container ></ng-container>
+                </div>
+              </div>
 
+              <div>
+                <ion-item>
+                  <ion-label position="floating">Phone number</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+
+                <div>
+
+                </div>
+              </div>
+
+              <div>
+                <ion-item>
+                  <ion-label position="floating">Password</ion-label>
+                  <ion-input type="password"></ion-input>
+                </ion-item>
+                <div>
+
+                </div>
+              </div>
+
+              <div>
+                <ion-item>
+                  <ion-label position="floating">Re-enter Password</ion-label>
+                  <ion-input type="password"></ion-input>
+                </ion-item>
+              </div>
+            </div>
+
+            <div *ngIf="!showRegSignUp">
+              <ion-button (click)="showFormRegSignup()" class="login-button">Continue</ion-button>
+            </div>
+
+            <div *ngIf="showRegSignUp">
+              <div class="forgot-link-container">
+                By continuing your agree to our
+                <a routerLink="#">Terms of Service</a>
+                and <a routerLink="#">Privacy Policy</a>
+              </div>
+
+              <ion-button class="login-button" (click)="submitForm()">Sign up</ion-button>
+              <ion-button class="back-home-button" (click)="showFormRegSignup()">
+                <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </form>
+        </div>
+
+        <div class="signin-with-container" *ngIf="!showRegSignUp">
+          <div class="divider">Or</div>
+
+          <ion-button>
+            <ion-icon class="logo-google" name="logo-google"></ion-icon>
+            Continue with Google
+          </ion-button>
+          <ion-button>
+            <ion-icon name="logo-twitter"></ion-icon>
+            Continue with Twitter
+          </ion-button>
+          <ion-button>
+            <ion-icon name="logo-facebook"></ion-icon>
+            Continue with Facebook
+          </ion-button>
         </div>
       </div>
 
     </div>
     <div id="footer">
-      <a routerLink="/login">Alreadu have an account? Sign in</a>
+      <a routerLink="/login">Already have an account? Sign in</a>
     </div>
   </div>
 </ion-content>

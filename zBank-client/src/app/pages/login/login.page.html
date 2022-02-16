@@ -6,42 +6,52 @@
       </div>
 
       <div class="content-container">
-        <div>
+        <form>
           <div>
-            <ion-item>
-              <ion-label position="floating">Username or email</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
+            <div>
+              <ion-item>
+                <ion-label position="floating">Username or email</ion-label>
+                <ion-input></ion-input>
+              </ion-item>
+            </div>
+
+            <div>
+              <ion-item>
+                <ion-label position="floating">Password</ion-label>
+                <ion-input type="password"></ion-input>
+              </ion-item>
+            </div>
+
+            <div class="checkbox-container">
+              <ion-item lines="none">
+                <ion-label>Remember me</ion-label>
+                <ion-checkbox slot="start"></ion-checkbox>
+              </ion-item>
+            </div>
+
+            <div>
+              <ion-button (click)="login()" class="login-button">Log in</ion-button>
+              <div class="forgot-link-container"><a routerLink="#">Forgot Password?</a></div>
+            </div>
+
           </div>
-
-          <div>
-            <ion-item>
-              <ion-label position="floating">Password</ion-label>
-              <ion-input type="password"></ion-input>
-            </ion-item>
-          </div>
-
-          <div class="checkbox-container">
-            <ion-item lines="none">
-              <ion-label>Remember me</ion-label>
-              <ion-checkbox slot="start"></ion-checkbox>
-            </ion-item>
-          </div>
-
-          <div>
-            <ion-button (click)="login()" class="login-button">Log in</ion-button>
-            <div class="forgot-link-container"><a routerLink="#">Forgot Password?</a></div>
-          </div>
-
-
-        </div>
+        </form>
 
         <div class="signin-with-container">
           <div class="divider">Or</div>
 
-          <ion-button>Continue with Google</ion-button>
-          <ion-button>Continue with Twitter</ion-button>
-          <ion-button>Continue with Facebook</ion-button>
+          <ion-button>
+            <ion-icon class="logo-google" name="logo-google"></ion-icon>
+            Continue with Google
+          </ion-button>
+          <ion-button>
+            <ion-icon name="logo-twitter"></ion-icon>
+            Continue with Twitter
+          </ion-button>
+          <ion-button>
+            <ion-icon name="logo-facebook"></ion-icon>
+            Continue with Facebook
+          </ion-button>
         </div>
       </div>
 
