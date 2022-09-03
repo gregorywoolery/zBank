@@ -1,0 +1,6 @@
+{
+	"appId": "io.zBank.NextGenTechStarter",
+	"appName": "zBank-client",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
