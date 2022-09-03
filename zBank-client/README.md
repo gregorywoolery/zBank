@@ -46,7 +46,7 @@
 
 ## :dart: About ##
 
-This is a banking app make with Ionic/Angular that can allow users to view transactions and anaylsis on monthly spendings/earnings.
+This is a banking app made with Ionic/Angular that can allow users to view transactions and anaylsis on monthly spendings/earnings.
 
 ## :rocket: Technologies ##
 
